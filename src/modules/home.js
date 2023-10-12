@@ -1,4 +1,5 @@
 import "../styles/home.css";
+import loadMenu from "./menu";
 
 function loadHome() {
   const content = document.createElement('div');
@@ -29,6 +30,11 @@ function loadHome() {
   content.appendChild(imageCredit);
 
   container.appendChild(content);
+
+  messageButton.addEventListener('click', () => {
+    document.querySelector('.header').nextElementSibling.remove();
+    loadMenu();
+  });
 }
 
 export default loadHome;
