@@ -1,28 +1,31 @@
-import "./style.css";
+import loadRestaurant from "./modules/restaurant";
+import loadHome from "./modules/home";
+import loadMenu from "./modules/menu";
 
-const container = document.createElement('div');
-container.setAttribute('id', 'container');
+init();
 
-const header = document.createElement('div');
-header.classList.add('header');
+function addNavEvents() {
+  const homeBtn = document.querySelector('.home');
+  const menuBtn = document.querySelector('.menu');
+  const messageMenuBtn = document.querySelector('.messageButton');
+  
+  homeBtn.addEventListener('click', () => {
+    document.querySelector('.header').nextElementSibling.remove();
+    loadHome();
+  });
+  menuBtn.addEventListener('click', () => {
+    document.querySelector('.header').nextElementSibling.remove();
+    loadMenu();
+  });
+  //make this work more than once
+  messageMenuBtn.addEventListener('click', () => {
+    document.querySelector('.header').nextElementSibling.remove();
+    loadMenu();
+  });
+}
 
-const title = document.createElement('h1');
-title.classList.add('title');
-title.textContent = "Papa Pasta";
-const headerSelection = document.createElement('div')
-headerSelection.classList.add('headerSelection');
-
-const home = document.createElement('h3');
-home.textContent = "Home";
-const menu = document.createElement('h3');
-menu.textContent = "Menu";
-
-headerSelection.appendChild(home);
-headerSelection.appendChild(menu);
-
-header.appendChild(title);
-header.appendChild(headerSelection);
-
-container.appendChild(header);
-
-document.body.appendChild(container);
+function init() {
+  loadRestaurant();
+  loadHome();
+  addNavEvents();
+}

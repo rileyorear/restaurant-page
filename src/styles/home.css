@@ -1,0 +1,54 @@
+.contentHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-position: center center;
+  background-image: url("../assets/imgs/jakub-kapusnak-tEVisOXz26Y-unsplash.jpg");
+  background-size: cover;
+}
+
+.messageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.messageSmall {
+  font-size: 1rem;
+}
+
+.messageButton {
+  font-size: 1em;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.messageButton:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.messageButton:active {
+  background-color: rgb(202, 202, 202);
+}
+
+.imageCredit, a { 
+  color: white;
+}
+
+.imageCredit {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
