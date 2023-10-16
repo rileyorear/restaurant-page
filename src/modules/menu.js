@@ -1,4 +1,9 @@
-import "../styles/menu.css"
+import "../styles/menu.css";
+import "../assets/imgs/aglio olio.png";
+import "../assets/imgs/alle vongole.png";
+import "../assets/imgs/bolognese.png";
+import "../assets/imgs/carbonara.png";
+import "../assets/imgs/tomato.png";
 
 function createMenu() {
   const menu = document.createElement("div");
