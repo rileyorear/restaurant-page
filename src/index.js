@@ -6,7 +6,7 @@ init();
 
 function addNavEvents() {
   const homeBtn = document.querySelector('.home');
-  const menuBtn = document.querySelector('.menu');
+  const menuBtn = document.querySelector('.menuHeaderButton');
         
   homeBtn.addEventListener('click', () => {
     document.querySelector('.header').nextElementSibling.remove();

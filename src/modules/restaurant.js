@@ -17,7 +17,7 @@ function loadRestaurant() {
   home.classList.add('home');
   home.textContent = "Home";
   const menu = document.createElement('h3');
-  menu.classList.add('menu');
+  menu.classList.add('menuHeaderButton');
   menu.textContent = "Menu";
   
   headerSelection.appendChild(home);

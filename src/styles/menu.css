@@ -1,3 +1,32 @@
 .contentMenu {
-  
+  display: flex;
+  justify-content: center;
+  background-position: center center;
+  background-image: url("../assets/imgs/jakub-kapusnak-tEVisOXz26Y-unsplash.jpg");
+  background-size: cover;
+}
+
+.menu {
+  margin: 100px 0px 100px 0px;
+  padding: 30px 0px 45px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  user-select: none;
+  width: 650px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.foodImage {
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 4px #EAD6B9;
 }
