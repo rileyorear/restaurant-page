@@ -5,23 +5,23 @@ function createMenu() {
   menu.classList.add("menu");
 
   menu.appendChild(createMenuItem(
-    "Tomato", "Spaghetti pasta, Tomato sauce, Basil"
+    "Tomato", "Olive Oil, Red pepper flakes, Basil"
   ));
 
   menu.appendChild(createMenuItem(
-    "Bolognese", "Spaghetti pasta, Tomato sauce, Basil"
+    "Bolognese", "Ground beef, Red wine, Tomato paste"
   ));
 
   menu.appendChild(createMenuItem(
-    "Carbonara", "Spaghetti pasta, Tomato sauce, Basil"
+    "Carbonara", "Pancetta, Black pepper, Parmesan"
   ));
 
   menu.appendChild(createMenuItem(
-    "Aglio Olio", "Spaghetti pasta, Tomato sauce, Basil"
+    "Aglio Olio", "Spaghetti pasta, Garlic, Oil"
   ));
 
   menu.appendChild(createMenuItem(
-    "Alle Vongole", "Spaghetti pasta, Tomato sauce, Basil"
+    "Alle Vongole", "Spaghetti pasta, White wine, Clams"
   ));
 
   return menu;
